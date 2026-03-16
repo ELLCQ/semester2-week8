@@ -3,6 +3,9 @@
 
 typedef struct _point {
     // your code
+    int x;
+    int y;
+    
 } Point;
 
 // state function headers here

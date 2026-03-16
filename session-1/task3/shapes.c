@@ -12,22 +12,32 @@ int main( void ) {
 
 Rectangle makeRectangle( Point p, float width, float height ){
     Rectangle r;
+    p  = {1.0, 2.0};
+    width = 3.0;
+    height = 4.0;
+
+
 
     return r;
 }
 
 float area( Rectangle r ) {
-    float a = 0.0;
+    float a = width * height;
 
     return a;
 }
 
 void shiftRectangle( Rectangle *r, Point dp ) {
-
-    return;
+    dp = {2.0, 3.0};
+    p.x += dp.x;
+    p.y += dp.y;
+    
+    return 0;
 }
 
 void scaleRectangle( Rectangle *r, float scale ) {
-
-    return;
+    scale = 2.0;
+    r.width *= scale;
+    r.height *= scale;
+    return 0;
 }

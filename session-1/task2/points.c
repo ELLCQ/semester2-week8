@@ -14,6 +14,11 @@ int main( void ) {
     printf(" Distance between (%.1f,%.1f) and (%.1f,%.1f) is %f\n", 
              p1.x,p1.y,p2.x,p2.y,distance(p1,p2));
     */
+    Point p1 = { .x=1, .y=2 };
+    Point p2 = { .x=-2, .y=4 };
+    
+    printf(" Distance between (%.1f,%.1f) and (%.1f,%.1f) is %f\n", 
+             p1.x,p1.y,p2.x,p2.y,distance(p1,p2));
     return 0;
 }
 
