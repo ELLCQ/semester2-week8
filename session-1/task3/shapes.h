@@ -10,7 +10,7 @@ typedef struct _point {
 
 typedef struct _rectangle {
     // fields
-    float left_corner;
+    float corner;
     float width;
     float height;
 } Rectangle;
