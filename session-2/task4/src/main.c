@@ -1,8 +1,8 @@
 
 #include <stdio.h>
 
-#include "../include/structure.h"
-#include "../include/student.h"
+#include "/workspaces/semester2-week8/session-2/task4/include/structure.h"
+#include "/workspaces/semester2-week8/session-2/task4/include/student.h"
 
 int main( void ) {
     // Create and initialise a student variable
