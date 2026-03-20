@@ -1,6 +1,6 @@
 #include <stdio.h>
+#include "structure.h"
 #include "student.h"
-include "structure.h"
 
 int main() {
     // Create and initialise a student variable
