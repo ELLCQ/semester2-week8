@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "student.h"
+include "structure.h"
 
 float calculate_average(Student student) {
     float sum = 0.0;
