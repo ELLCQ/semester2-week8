@@ -51,14 +51,14 @@ float triangleArea( Triangle t ){
     float y2 = t.p[1].y;
     float x3 = t.p[2].x;
     float y3 = t.p[2].y;
-    float area = 0.5 * fabs((x2-x1)*(y3-y1)-(y2-y1)*(x3-x1));
+    float area = 0.5f * fabs((x2-x1)*(y3-y1)-(y2-y1)*(x3-x1));
     return area;
 }
 
 bool samePoint( Point p1, Point p2 ){
     makeLine( Point p1, Point p2 );
     lineLength( Line l );
-    if(length<1.0e-6){
+    if(length<1.0e-6f){
         return true;
     }
     else{
@@ -75,3 +75,11 @@ bool pointInLine( Point p, Line l){
     }
 }
 
+bool pointInTriangle( Point p, Triangle t ){
+    if(samePoint(Point p, Point t.p[0]) || samePoint(Point p, Point t.p[1]) || samePoint(Point p, Point t.p[2])){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
