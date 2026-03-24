@@ -56,8 +56,7 @@ float triangleArea( Triangle t ){
 }
 
 bool samePoint( Point p1, Point p2 ){
-    makeLine( Point p1, Point p2 );
-    lineLength( Line l );
+     float length = lineLength(makeLine( p1, p2 ));
     if(length<1.0e-6f){
         return true;
     }
@@ -67,7 +66,7 @@ bool samePoint( Point p1, Point p2 ){
 }
 
 bool pointInLine( Point p, Line l){
-    if(samePoint(Point p, Point l.p[0]) || samePoint(Point p, Point l.p[1])){
+    if(samePoint(p, l.p[0]) || samePoint(p, l.p[1])){
         return true;
     }
     else{
@@ -76,7 +75,7 @@ bool pointInLine( Point p, Line l){
 }
 
 bool pointInTriangle( Point p, Triangle t ){
-    if(samePoint(Point p, Point t.p[0]) || samePoint(Point p, Point t.p[1]) || samePoint(Point p, Point t.p[2])){
+    if(samePoint(p, t.p[0]) || samePoint(p, t.p[1]) || samePoint(p, t.p[2])){
         return true;
     }
     else{
